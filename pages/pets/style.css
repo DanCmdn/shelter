@@ -304,20 +304,16 @@
 
 @media (max-width:767px) and (min-width:320px) {
 	.footer {
-		padding: 30px 10px 0;
+		padding: 30px 10px 0px;
 	}
 	.footer .wrapper {
 		width: 100%;
 		grid-template-columns: auto;
-		grid-template-rows: 234px 234px 365px;
-		/* padding: 0 4.4vw; */
+		grid-template-rows: 234px 234px 315px;
 		grid-gap: 40px 50px;
 	}
 	.footer .wrapper-item {
 		margin: 0 auto;
-	}
-	.footer .wrapper-item:last-child {
-		padding-top: 50px;
 	}
 	.footer .wrapper-item .headline {
 		text-align: center;
