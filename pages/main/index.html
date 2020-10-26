@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Shelter</title>
 	<link rel="stylesheet" href="style.css">
+	<script src="script.js" defer></script>
 </head>
 
 <body>
@@ -34,7 +35,7 @@
 					</span>
 					<span class="nav-el">
 						<a href="">
-							To help the shelter
+							Help the shelter
 						</a>
 					</span>
 					<span class="nav-el">
@@ -43,26 +44,31 @@
 						</a>
 					</span>
 				</nav>
-
-
-				<nav class="burger-menu burger-menu_active">
-					
-					<a href="" class="burger-menu__button">
-						<img src="../../assets/icons/Burger-main.png" alt="">
-					</a>
-
+				<div class="burger-menu__button">
+					<div class="line"></div>
+					<div class="line"></div>
+					<div class="line"></div>
+				</div>
+				<nav class="burger-menu">
 					<nav class="burger-menu__nav">
-						<a href="" class="burger-menu__link">About the shelter</a>
-						<a href="" class="burger-menu__link">Our pets</a>
-						<a href="" class="burger-menu__link">To help the shelter</a>
-						<a href="" class="burger-menu__link">Contacts</a>
+						<span class="burger-menu__link">
+							<a href="../main/index.html" class="active">About the shelter</a>
+						</span>
+						<span class="burger-menu__link">
+							<a href="../pets/pets.html">Our pets</a>
+						</span>
+						<span class="burger-menu__link">
+							<a href="">Help the shelter</a>
+						</span>
+						<span class="burger-menu__link">
+							<a href="">Contacts</a>
+						</span>
 					</nav>
-					
-					
 				</nav>
-
-
 			</header>
+
+			<div class="overlay"></div>
+			
 			<div class="wrapper-item">
 				<div class="content-box">
 					<div class="headline">
@@ -74,7 +80,9 @@
 						in the world, you will see!
 					</div>
 					<div class="btn">
-						Make a friend
+						<a href="../pets/pets.html">
+							Make a friend
+						</a>
 					</div>
 				</div>
 				<img class="img" src="../../assets/images/start-screen-puppy.png" alt="puppy">
@@ -163,7 +171,9 @@
 			</div>
 
 			<div class="btn btn_primary">
-				Get to know the rest
+				<a href="../pets/pets.html">
+					Get to know the rest
+				</a>
 			</div>
 		</div>
 	</div>

@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Pets</title>
 	<link rel="stylesheet" href="style.css">
+	<script src="script.js" defer></script>
 </head>
 
 <body>
@@ -13,12 +14,14 @@
 	<header class="header">
 		<div class="wrapper">
 			<div class="logo">
-				<div class="headline">
-					Cozy House
-				</div>
-				<div class="paragraph">
-					Shelter for pets in Boston
-				</div>
+				<a href="../main/index.html">
+					<div class="headline">
+						Cozy House
+					</div>
+					<div class="paragraph">
+						Shelter for pets in Boston
+					</div>
+				</a>
 			</div>
 			<nav class="nav">
 				<span class="nav-el">
@@ -42,13 +45,30 @@
 					</a>
 				</span>
 			</nav>
+			<div class="burger-menu__button">
+				<div class="line"></div>
+				<div class="line"></div>
+				<div class="line"></div>
+			</div>
 			<nav class="burger-menu">
-				<a href="" class="burger-menu__button">
-					<img src="../../assets/icons/Burger-pets.png" alt="">
-				</a>
+				<nav class="burger-menu__nav">
+					<span class="burger-menu__link">
+						<a href="../main/index.html">About the shelter</a>
+					</span>
+					<span class="burger-menu__link">
+						<a href="../pets/pets.html" class="active">Our pets</a>
+					</span>
+					<span class="burger-menu__link">
+						<a href="">Help the shelter</a>
+					</span>
+					<span class="burger-menu__link">
+						<a href="">Contacts</a>
+					</span>
+				</nav>
 			</nav>
 		</div>
 	</header>
+	<div class="overlay"></div>
 	<!--------------------- PETS --------------------->
 	<div class="pets">
 		<div class="wrapper">
