@@ -602,7 +602,7 @@
 	line-height: 18px;
 	color: #b2b2b2;
 }
-.donation .credit-card {
+.donation .credit-card a {
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
@@ -610,6 +610,11 @@
 	height: 43px;
 	background: #f1cdb3;
 	border-radius: 9px;
+	color: #545454;
+	text-decoration: none;
+}
+.donation .credit-card a:hover {
+	background: #fddcc4;
 }
 .donation .credit-card .headline {
 	font-family: Georgia, serif;
@@ -660,7 +665,7 @@
 	.donation .text .paragraph_low {
 		text-align: justify;
 	}
-	.donation .credit-card {
+	.donation .credit-card a {
 		width: 281px;
 		height: 43px;
 		margin: 0 auto;
