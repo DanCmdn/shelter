@@ -4,6 +4,9 @@
 	box-sizing: border-box;
 	font-family: Arial, sans-serif;
 }
+.scroll-hidden {
+	overflow: hidden;
+}
 .wrapper {
 	max-width: 1200px;
 	width: 100%;
@@ -93,8 +96,13 @@
 	border-bottom: 3px solid #F1CDB3;
 	color: #FFF;
 }
+.start-screen .header .nav a.disabled,
+.start-screen .burger-menu .burger-menu__nav .burger-menu__link a.disabled {
+	pointer-events: none;
+	cursor: default;
+}
 .start-screen .wrapper-item {
-	margin-top: 60px;
+	margin-top: 61px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -354,6 +362,7 @@
 }
 .pets .slider {
 	margin: 45px 0;
+	width: 100%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -676,6 +685,7 @@
 .footer .wrapper {
 	display: grid;
 	grid-template-columns: auto auto 300px;
+	justify-content: space-between;
 }
 .footer .wrapper-item {
 	display: flex;
@@ -684,11 +694,18 @@
 	margin: 16px 0 60px;
 	height: 234px;
 }
+.footer .wrapper-item:last-child {
+	margin-top: 0;
+}
 .footer .wrapper-item .headline {
 	color: #fff;
 }
-.footer .wrapper-item .paragraph {
+.footer .wrapper-item .paragraph a:link,
+.footer .wrapper-item .paragraph a:visited {
 	display: flex;
+	flex-direction: row;
+	align-items: center;
+	text-decoration: none;
 }
 .footer .wrapper-item .paragraph img {
 	margin-right: 20px;
@@ -711,7 +728,7 @@
 		padding: 30px 30px 0;
 	}
 	.footer .wrapper {
-		width: 616px;
+		width: 708px;
 		grid-template-columns: auto auto;
 		grid-template-rows: 234px 315px;
 		grid-template-areas: 
@@ -732,7 +749,7 @@
 		padding: 30px 10px 0px;
 	}
 	.footer .wrapper {
-		width: 100%;
+		width: 300px;
 		grid-template-columns: auto;
 		grid-template-rows: 234px 234px 315px;
 		grid-gap: 40px 50px;
